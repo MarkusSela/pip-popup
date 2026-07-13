@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is PiP Popup. You should tell us what your extension does here.",
+        "message": "Activate Picture in Picture for any video with one click.",
         "description": "Description of what the extension does."
     }
 }
