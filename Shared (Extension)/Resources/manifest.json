@@ -20,8 +20,11 @@
     },
 
     "action": {
+        "default_popup": "popup.html",
         "default_icon": "images/toolbar-icon.svg"
     },
 
-    "permissions": [ "activeTab", "scripting", "storage", "windows" ]
+    "permissions": [ "activeTab", "scripting", "storage" ],
+
+    "host_permissions": [ "https://ko-fi.com/*" ]
 }
