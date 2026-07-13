@@ -10,7 +10,7 @@ Click the **PiP Popup** icon in the Safari toolbar while a video is playing — 
 
 ## Install (pre-built)
 
-1. Download `PiP.Popup.v1.0.2.macOS.zip` from the [latest release](https://github.com/MarkusSela/pip-popup/releases/latest)
+1. Download `PiP.Popup.v1.0.3.macOS.zip` from the [latest release](https://github.com/MarkusSela/pip-popup/releases/latest)
 2. Unzip and move **PiP Popup.app** to `/Applications`
 3. Remove the quarantine attribute — open Terminal and run:
    ```bash
@@ -35,7 +35,7 @@ Open the project in Xcode and press **⌘R** — Xcode will sign and launch it a
 2. Click the **PiP Popup** icon in the Safari toolbar
 3. The video enters Picture-in-Picture mode instantly
 
-Every 5 uses a small banner will appear asking to support the project — it can be dismissed instantly.
+Every 5 uses a native popup window opens from the extension icon with a donation message — it can be dismissed instantly.
 
 ## Requirements
 
@@ -47,12 +47,13 @@ Every 5 uses a small banner will appear asking to support the project — it can
 
 PiP Popup is free and always will be. If you find it useful, consider buying me a coffee!
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/markussela)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/marukoshi)
 
 ## Changelog
 
-### v1.0.2
-- Added donation banner every 5 uses (dismissible, auto-closes after 15s)
+### v1.0.3
+- Donation popup now opens as a native window from the extension icon every 5 uses
+- Fixed Ko-fi link to ko-fi.com/marukoshi
 
 ### v1.0.1
 - Removed popup window — clicking the icon now activates PiP directly
