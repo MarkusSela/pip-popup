@@ -6,13 +6,13 @@ Safari Web Extension that activates Picture-in-Picture for any video with one cl
 
 ## How it works
 
-Click the **PiP Popup** icon in the Safari toolbar while a video is playing — it instantly enters Picture-in-Picture mode. Works on YouTube, Vimeo, Netflix, and any site with an HTML5 `<video>` element. No popup window, no extra clicks.
+Click the **PiP Popup** icon in the Safari toolbar while a video is playing — it instantly enters Picture-in-Picture mode. Works on YouTube, Vimeo, Netflix, and any site with an HTML5 `<video>` element.
 
-## Install (pre-built)
+## Install
 
-1. Download `PiP.Popup.v1.0.3.macOS.zip` from the [latest release](https://github.com/MarkusSela/pip-popup/releases/latest)
+1. Download `PiP.Popup.macOS.zip` from the [latest release](https://github.com/MarkusSela/pip-popup/releases/latest)
 2. Unzip and move **PiP Popup.app** to `/Applications`
-3. Remove the quarantine attribute — open Terminal and run:
+3. Open Terminal and run:
    ```bash
    xattr -dr com.apple.quarantine /Applications/PiP\ Popup.app
    ```
@@ -23,19 +23,9 @@ Click the **PiP Popup** icon in the Safari toolbar while a video is playing — 
 
 ## Build from source
 
-Requires Xcode 14+ and an Apple ID added in **Xcode → Settings → Accounts**.
+Open the project in Xcode and press **⌘R**.
 
-Open the project in Xcode and press **⌘R** — Xcode will sign and launch it automatically.
-
-> **Note:** macOS 14+ requires a real Apple Development certificate for Safari to register the extension. Ad-hoc signing is not sufficient.
-
-## Usage
-
-1. Open a page with a video and start playback
-2. Click the **PiP Popup** icon in the Safari toolbar
-3. The video enters Picture-in-Picture mode instantly
-
-Every 5 uses a native popup window opens from the extension icon with a donation message — it can be dismissed instantly.
+> macOS requires a real Apple Development certificate to register Safari extensions. Add your Apple ID in Xcode → Settings → Accounts.
 
 ## Requirements
 
@@ -43,25 +33,11 @@ Every 5 uses a native popup window opens from the extension icon with a donation
 - Safari 14 or later
 - "Allow Unsigned Extensions" enabled (Develop menu)
 
-## Support the project
+## Support
 
-PiP Popup is free and always will be. If you find it useful, consider buying me a coffee!
+PiP Popup is free and always will be.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/marukoshi)
-
-## Changelog
-
-### v1.0.3
-- Donation popup now opens as a native window from the extension icon every 5 uses
-- Fixed Ko-fi link to ko-fi.com/marukoshi
-
-### v1.0.1
-- Removed popup window — clicking the icon now activates PiP directly
-- Fixed *"The request is not triggered by a user activation"* error
-- Fixed extension not appearing in Safari on macOS 26 — built with Apple Development certificate
-
-### v1.0.0
-- Initial release
 
 ## License
 
