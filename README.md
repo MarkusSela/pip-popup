@@ -12,12 +12,16 @@ Click the **PiP Popup** icon in the Safari toolbar while a video is playing — 
 
 > No Apple Developer account required.
 
-1. Download `PiPPopup.zip` from the [latest release](https://github.com/MarkusSela/pip-popup/releases/latest)
+1. Download `PiP.Popup.v1.0.0.macOS.zip` from the [latest release](https://github.com/MarkusSela/pip-popup/releases/latest)
 2. Unzip and move **PiP Popup.app** to `/Applications`
-3. Open the app once to register the extension
-4. **Safari → Settings → Extensions** → enable **PiP Popup**
-5. Enable the Develop menu: **Safari → Settings → Advanced → Show Develop menu**
-6. **Develop → Allow Unsigned Extensions**
+3. Remove the quarantine attribute (required for unsigned apps):
+   ```bash
+   xattr -dr com.apple.quarantine /Applications/PiP\ Popup.app
+   ```
+4. Open the app once to register the extension
+5. **Safari → Settings → Extensions** → enable **PiP Popup**
+6. Enable the Develop menu: **Safari → Settings → Advanced → Show Develop menu**
+7. **Develop → Allow Unsigned Extensions**
 
 ## Build from source
 
