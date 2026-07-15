@@ -1,15 +1,15 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Collapsed by default — invisible until JS decides to show content */
 html, body {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
     background: transparent;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Segoe UI", sans-serif;
 }
 
-/* Liquid Glass approximation — specular highlight + layered shadows */
+/* Liquid Glass card */
 .glass {
     width: 300px;
     padding: 24px 20px 18px;
@@ -28,13 +28,9 @@ html, body {
     );
     border: 1px solid rgba(255, 255, 255, 0.85);
     box-shadow:
-        /* Specular top-edge highlight */
         inset 0 1px 0 rgba(255, 255, 255, 1),
-        /* Subtle bottom inner edge */
         inset 0 -1px 0 rgba(180, 200, 235, 0.4),
-        /* Outer glow */
         0 0 0 0.5px rgba(130, 160, 210, 0.18),
-        /* Main drop shadow */
         0 12px 40px rgba(60, 90, 160, 0.14),
         0 2px 8px rgba(60, 90, 160, 0.08);
 }
@@ -123,13 +119,10 @@ p {
             inset 0 1px 0 rgba(255, 255, 255, 0.12),
             inset 0 -1px 0 rgba(0, 0, 0, 0.4),
             0 0 0 0.5px rgba(0, 0, 0, 0.5),
-            0 12px 40px rgba(0, 0, 0, 0.5),
-            0 2px 8px rgba(0, 0, 0, 0.3);
+            0 12px 40px rgba(0, 0, 0, 0.5);
     }
-
     h1 { color: #f2f2f7; }
     p  { color: rgba(235, 235, 245, 0.65); }
-
     .close-btn { color: rgba(235, 235, 245, 0.3); }
     .close-btn:hover { color: rgba(235, 235, 245, 0.6); }
 }
